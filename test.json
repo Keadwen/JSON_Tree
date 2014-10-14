@@ -1,0 +1,14 @@
+# Test JSON FILE
+
+{
+  "version": "$Id$",
+  "data": {
+    "tree 1": {
+      "subtree 1.1": "abc",
+      "subtree 1.2": "def"
+    },
+    "tree 2": {
+      "subtree 2.1": "ghi"
+    }
+  }
+}
