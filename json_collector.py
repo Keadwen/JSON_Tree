@@ -61,7 +61,3 @@ class JsonCollector(object):
           self.FindTree(i, dict_out)    # Recursive search for each element.
 
     return dict_out.get(self.tree_word, {})  # Return only requested key.
-
-if __name__ == '__main__':
-  test = JsonCollector('/Users/jakubm/github/JSON_Tree/test.json', 'tree 1')
-  print test.return_data
