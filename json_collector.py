@@ -15,8 +15,11 @@ class JsonCollector(object):
 
   Args:
     json_location (str): a location of the JSON file.
-    tree_word (tuple): an object with values to search for.
+    tree_word (string): an object with values to search for.
     json_files (dict): contains all open JSON files (k: filename, v: object)
+
+  Example:
+    data = JsonCollector('/Users/<user>/test.json', 'tree 1')
   """
 
   def __init__(self, json_location, tree_word):
@@ -58,7 +61,6 @@ class JsonCollector(object):
           self.FindTree(i, dict_out)    # Recursive search for each element.
 
     return dict_out.get(self.tree_word, {})  # Return only requested key.
-
 
 if __name__ == '__main__':
   test = JsonCollector('/Users/jakubm/github/JSON_Tree/test.json', 'tree 1')
